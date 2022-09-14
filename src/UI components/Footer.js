@@ -10,12 +10,12 @@ const Footer = () => {
               <h5>Contact us</h5>{" "}
             </div>
             <div className="phone">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/nahom-asfaw-6b78a6185/">
                 <i className="fas fa-phone-volume"></i>+358 0000 0040
               </a>
             </div>
             <div className="email">
-              <a href="#">
+              <a href="https://www.linkedin.com/in/nahom-asfaw-6b78a6185/">
                 <i className="fas fa-envelope"></i>nahom130g@gmail.com
               </a>
             </div>

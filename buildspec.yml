@@ -1,18 +1,24 @@
-# Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
 version: 0.2
+
 phases:
+  install:
+    runtime-versions:
+      nodejs: 10
+    commands:
+      - echo "installing something"
+      - npm i
   pre_build:
     commands:
-      #installs dependencies into the node_modules/ directory
-      - npm install
+      -
+      - echo "we are in the pre build phase"
   build:
     commands:
-      - echo Build started on `date`
-      - echo Compiling
       - npm run build
+      - echo "we are in the build block"
+      - echo "we will run some tests"
   post_build:
     commands:
-      - echo Build completed on `date`
+      - echo "we are in the post build phase now"
 # Include only the files required for your application to run.
 artifacts:
   files:
@@ -20,4 +26,3 @@ artifacts:
     - src/**/*
     - package.json
     - appspec.yml
-    - scripts/**/*
